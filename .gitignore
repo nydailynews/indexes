@@ -1,0 +1,4 @@
+
+# Boilerplate gitignore
+.DS_Store
+*.pyc
