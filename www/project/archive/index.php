@@ -24,13 +24,13 @@
 	<meta name="keywords" content="interactive, news, archives" />
 
 	<!-- LINK -->
-	<link rel="canonical" href="http://interactive.nydailynews.com/archive/">
-	<meta property="og:url" content="http://interactive.nydailynews.com/archive/" />
-	<meta name="twitter:url" content="http://interactive.nydailynews.com/archive/" />
+	<link rel="canonical" href="http://interactive.nydailynews.com/project/archive/">
+	<meta property="og:url" content="http://interactive.nydailynews.com/project/archive/" />
+	<meta name="twitter:url" content="http://interactive.nydailynews.com/project/archive/" />
 
 	<!-- THUMBNAIL IMAGE-->
-	<meta property="og:image" content="http://interactive.nydailynews.com/archive/img/share.png" />
-	<meta name="twitter:image" content="http://interactive.nydailynews.com/archive/img/share.png" />
+	<meta property="og:image" content="http://interactive.nydailynews.com/project/archive/img/share.png" />
+	<meta name="twitter:image" content="http://interactive.nydailynews.com/project/archive/img/share.png" />
 	<meta name="twitter:image:alt" content="A description of the twitter image" />
 	<meta property="og:image:width" content="1024" />
 	<meta property="og:image:height" content="512" />
@@ -41,8 +41,8 @@
 			"@context": "http://schema.org",
 			"@type": "NewsArticle",
 			"headline": "Daily News Archive Projects",
-			"url": "http://interactive.nydailynews.com/archive/",
-			"thumbnailUrl": "http://interactive.nydailynews.com/archive/img/share.png",
+			"url": "http://interactive.nydailynews.com/project/archive/",
+			"thumbnailUrl": "http://interactive.nydailynews.com/project/archive/img/share.png",
 			"dateCreated": "2018-02-23T06:00:00Z",
 			"articleSection": "Interactive",
 			"creator": ["Interactive Project"],
@@ -86,7 +86,7 @@
 		};
 		var nydnDO = [ { 
 			'title':'xxxDaily News Archive Projectsxxx', 
-			'link':'http://interactive.nydailynews.com/archive/', 
+			'link':'http://interactive.nydailynews.com/project/archive/', 
 			'p_type':'interactive', 
 			'section':'interactive' 
 		}];
@@ -98,7 +98,7 @@
 
 	<script src="/js/jquery.min.js"></script>
 
-	<script>var nav_params = {section: 'news archive', url: 'http://interactive.nydailynews.com/archive/'};</script>
+	<script>var nav_params = {section: 'news archive', url: 'http://interactive.nydailynews.com/project/archive/'};</script>
 	<script src="/library/vendor-nav/vendor-include.js" defer></script>
 </head>
 
@@ -115,23 +115,29 @@
 
 	<div class="center">
         <ul class="ra-share" id="ra-share-top" style="margin: 20px 0;">
-            <li class="rt-share-f"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://interactive.nydailynews.com/archive/">facebook</a> </li>
-            <li class="ra-share-t"> <a target="_blank" href="https://twitter.com/intent/tweet?text=The Daily News' list of news archive projects%20http://interactive.nydailynews.com/archive/">Tweet</a></li>
-            <li class="ra-share-e"> <a href="mailto:?subject=The Daily News' list of news archive projects: http://interactive.nydailynews.com/archive/">email</a> </li>
+            <li class="rt-share-f"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://interactive.nydailynews.com/project/archive/">facebook</a> </li>
+            <li class="ra-share-t"> <a target="_blank" href="https://twitter.com/intent/tweet?text=The Daily News' list of news archive projects%20http://interactive.nydailynews.com/project/archive/">Tweet</a></li>
+            <li class="ra-share-e"> <a href="mailto:?subject=The Daily News' list of news archive projects: http://interactive.nydailynews.com/project/archive/">email</a> </li>
         </ul>
     </div>
 
     <p class="center">An index of the interactive projects related to our archival news stories. See also: our <a href="/longform/"> longform articles</a>, our <a href="/quiz/">latest quizzes</a>, our <a href="/project/">special projects</a>, and our <a href="/poll/">latest polls</a>.</p>
 
-    <ul>
-    	<li></li>
-    </ul>
+	<?php
+	$prev_year = '';
+	foreach ( $csv->data as $key => $item ):
+		if ( trim($item['year']) != trim($prev_year) ): 
+			if ( $prev_year != '' ) echo '	</ul>';
+			$prev_year = $item['year'];
+	?>
 
-<div class="ad center">
-	<div id='div-gpt-ad-1423507761396-1'>
-		<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); });</script>
-	</div>
-</div>
+	<h2><?php echo $item['year']; ?> projects</h2>
+		<ul>
+	<?php endif;
+	    echo "      <li><a href='" . $item['url'] . "'>" . $item['title'] . "</a></li>\n";
+	endforeach;
+	?>
+		</ul>
 
 	</article>
 </main>
