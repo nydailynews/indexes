@@ -1,11 +1,11 @@
 <?php
 //include('env.php');
 //include(CLASS_PATH . 'class.csv.php');
-include('../../class.csv.php');
+include('../class.csv.php');
 $csv = new parseCSV('data.csv'); ?><!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Daily News Archive Projects</title>
+	<title>Daily News Map-based Projects</title>
 	<link rel="icon" type="image/png" href="http://interactive.nydailynews.com/favicons.png">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -16,25 +16,25 @@ $csv = new parseCSV('data.csv'); ?><!DOCTYPE HTML>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
 	<!-- Titles -->
-	<meta property="og:title" content='Daily News Archive Projects' />
-	<meta name="twitter:title" content='Daily News Archive Projects' />
+	<meta property="og:title" content='Daily News Map-based Projects' />
+	<meta name="twitter:title" content='Daily News Map-based Projects' />
 
 	<!-- Descriptions -->
-	<meta name="description" content="A list of Daily News archive projects" />
-	<meta property="og:description" content="A list of Daily News archive projects" />
-	<meta name="twitter:description" content="A list of Daily News archive projects" />
+	<meta name="description" content="A list of Daily News map-based projects" />
+	<meta property="og:description" content="A list of Daily News map-based projects" />
+	<meta name="twitter:description" content="A list of Daily News map-based projects" />
 
 	<!-- KEYWORD -->
-	<meta name="keywords" content="interactive, news, archives" />
+	<meta name="keywords" content="interactive, news, maps" />
 
 	<!-- LINK -->
-	<link rel="canonical" href="http://interactive.nydailynews.com/project/archive/">
-	<meta property="og:url" content="http://interactive.nydailynews.com/project/archive/" />
-	<meta name="twitter:url" content="http://interactive.nydailynews.com/project/archive/" />
+	<link rel="canonical" href="http://interactive.nydailynews.com/map/">
+	<meta property="og:url" content="http://interactive.nydailynews.com/map/" />
+	<meta name="twitter:url" content="http://interactive.nydailynews.com/map/" />
 
 	<!-- THUMBNAIL IMAGE-->
-	<meta property="og:image" content="http://interactive.nydailynews.com/project/archive/img/share.png" />
-	<meta name="twitter:image" content="http://interactive.nydailynews.com/project/archive/img/share.png" />
+	<meta property="og:image" content="http://interactive.nydailynews.com/map/img/share.png" />
+	<meta name="twitter:image" content="http://interactive.nydailynews.com/map/img/share.png" />
 	<meta name="twitter:image:alt" content="A description of the twitter image" />
 	<meta property="og:image:width" content="1024" />
 	<meta property="og:image:height" content="512" />
@@ -44,10 +44,10 @@ $csv = new parseCSV('data.csv'); ?><!DOCTYPE HTML>
 		{
 			"@context": "http://schema.org",
 			"@type": "NewsArticle",
-			"headline": "Daily News Archive Projects",
-			"url": "http://interactive.nydailynews.com/project/archive/",
-			"thumbnailUrl": "http://interactive.nydailynews.com/project/archive/img/share.png",
-			"dateCreated": "2018-02-23T06:00:00Z",
+			"headline": "Daily News Map-based Projects",
+			"url": "http://interactive.nydailynews.com/map/",
+			"thumbnailUrl": "http://interactive.nydailynews.com/map/img/share.png",
+			"dateCreated": "2018-02-26T06:00:00Z",
 			"articleSection": "Interactive",
 			"creator": ["Interactive Project"],
 			"keywords": ["interactive project","interactive","index"]
@@ -89,8 +89,8 @@ $csv = new parseCSV('data.csv'); ?><!DOCTYPE HTML>
 			"targetPath": document.location.pathname
 		};
 		var nydnDO = [ { 
-			'title':'xxxDaily News Archive Projectsxxx', 
-			'link':'http://interactive.nydailynews.com/project/archive/', 
+			'title':'xxxDaily News Map-based Projectsxxx', 
+			'link':'http://interactive.nydailynews.com/map/', 
 			'p_type':'interactive', 
 			'section':'interactive' 
 		}];
@@ -102,7 +102,7 @@ $csv = new parseCSV('data.csv'); ?><!DOCTYPE HTML>
 
 	<script src="/js/jquery.min.js"></script>
 
-	<script>var nav_params = {section: 'news archive', url: 'http://interactive.nydailynews.com/project/archive/'};</script>
+	<script>var nav_params = {section: 'maps', url: 'http://interactive.nydailynews.com/map/'};</script>
 	<script src="/library/vendor-nav/vendor-include.js" defer></script>
 </head>
 
@@ -115,17 +115,17 @@ $csv = new parseCSV('data.csv'); ?><!DOCTYPE HTML>
 <!-- CONTENT-START -->
 <main>
 	<article>
-	<h1 class="center">Daily News Archive Projects</h1>
+	<h1 class="center">Daily News Map-based Projects</h1>
 
 	<div class="center">
         <ul class="ra-share" id="ra-share-top" style="margin: 20px 0;">
-            <li class="rt-share-f"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://interactive.nydailynews.com/project/archive/">facebook</a> </li>
-            <li class="ra-share-t"> <a target="_blank" href="https://twitter.com/intent/tweet?text=The Daily News' list of news archive projects%20http://interactive.nydailynews.com/project/archive/">Tweet</a></li>
-            <li class="ra-share-e"> <a href="mailto:?subject=The Daily News' list of news archive projects: http://interactive.nydailynews.com/project/archive/">email</a> </li>
+            <li class="rt-share-f"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://interactive.nydailynews.com/map/">facebook</a> </li>
+            <li class="ra-share-t"> <a target="_blank" href="https://twitter.com/intent/tweet?text=The Daily News' list of news map-based projects%20http://interactive.nydailynews.com/map/">Tweet</a></li>
+            <li class="ra-share-e"> <a href="mailto:?subject=The Daily News' list of news map-based projects: http://interactive.nydailynews.com/map/">email</a> </li>
         </ul>
     </div>
 
-    <p class="center">An index of the interactive projects related to our archival news stories. See also: our <a href="/longform/"> longform articles</a>, our <a href="/quiz/">latest quizzes</a>, our <a href="/project/">special projects</a>, and our <a href="/poll/">latest polls</a>.</p>
+    <p class="center">An index of map-based interactive projects related to our news stories. See also: our <a href="/longform/"> longform articles</a>, our <a href="/quiz/">latest quizzes</a>, our <a href="/project/">special projects</a>, our <a href="/poll/">latest polls</a> and our <a href="/project/archive/">news archives.</a></p>
 
 	<?php
 	$prev_year = '';
