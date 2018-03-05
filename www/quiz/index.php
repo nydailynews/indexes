@@ -6,7 +6,7 @@ $csv = new parseCSV('data.csv');
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>The NY Daily News quizzes, by the NY Daily News</title>
+    <title>The NY Daily News quizzes - New York Daily News</title>
     <link rel="icon" type="image/png" href="http://interactive.nydailynews.com/favicons.png">
     <!-- DEFAULT -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -29,7 +29,6 @@ $csv = new parseCSV('data.csv');
 
     <!-- KEYWORD -->
     <meta name="keywords" content="quiz,quizzes,news quiz,new york city" />
-    <meta name="news_keywords" content="quiz,quizzes,news quiz,new york city" />
     <meta name="parsely-tags" content="interactive,interactive quiz,quizzes" />
 
     <!-- LINK -->
@@ -102,7 +101,7 @@ $csv = new parseCSV('data.csv');
     </script>
     
     <!-- ADS-START -->
-	<script onload="nydn_ads('quiz');" src="/includes/template/template.js"></script>
+    <script onload="nydn_ads('quiz');" src="/includes/template/template.js"></script>
     <!-- ADS-END -->
     <script>var nav_params = {section: 'News Quizzes', url: 'http://interactive.nydailynews.com/quiz/'};</script>
     <script src="/library/vendor-nav/vendor-include.js" defer></script>
@@ -134,7 +133,7 @@ body#nydailynews article {
 </style>
   <article class="column">
     <h1 class="center">NY Daily News Quizzes</h1>
-    <p class="description center">Look at all the news and entertainment and sports quizzes from the New York Daily News</p>
+    <p class="description center">Look at all the news and entertainment and sports quizzes from the New York Daily News.</p>
 	<section id="sidebar" class="column">
 		<h2>Game of Thrones</h2>
 		<p>Our collection of Game of Thrones special projects.</p>
