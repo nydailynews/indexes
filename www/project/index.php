@@ -120,7 +120,7 @@ $csv = new parseCSV('data.csv'); ?>
     <p>An index of the latest from the Daily News interactive team. See also: <a href="/longform/">our longform articles</a>, <a href="/daily-dig/">our archive of previous longforms</a>, <a href="/quiz/">our latest quizzes</a>, and <a href="/poll/">our latest polls</a>.
     </p>
     <div>
-        <ul class="ra-share" id="ra-share-top" style="text-align: center;">
+        <ul class="ra-share" id="ra-share-top" style="margin: 20px 0;">
             <li class="rt-share-f"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://interactive.nydailynews.com/project/">facebook</a> </li>
             <li class="ra-share-t"> <a target="_blank" href="https://twitter.com/intent/tweet?text=The Daily News' list of interactive projects%20http://interactive.nydailynews.com/project/">Tweet</a></li>
             <li class="ra-share-e"> <a href="mailto:?subject=The Daily News' list of interactive projects: http://interactive.nydailynews.com/project/">email</a> </li>
@@ -142,7 +142,7 @@ endforeach;
 ?>
 	</ul>
 
-  <div class="ad center">
+<!--   <div class="ad center">
     <div id='div-gpt-ad-1423507761396-1'>
               <script>
                 googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); });
@@ -156,7 +156,7 @@ endforeach;
                 googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-2'); });
               </script>
     </div>
-  </div>
+  </div> -->
 
 </article>
 
