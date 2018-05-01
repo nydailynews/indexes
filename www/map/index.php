@@ -5,7 +5,7 @@ include('../class.csv.php');
 $csv = new parseCSV('data.csv'); ?><!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Daily News Map-based Projects</title>
+	<title>Daily News map-based projects</title>
 	<link rel="icon" type="image/png" href="http://interactive.nydailynews.com/favicons.png">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />

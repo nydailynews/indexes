@@ -7,7 +7,7 @@ $csv = new parseCSV('data.csv'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>The Daily News' list of interactive projects - NY Daily News</title>
+    <title>The Daily News' list of interactive projects</title>
     <link rel="icon" type="image/png" href="http://interactive.nydailynews.com/favicons.png">
     <!-- DEFAULT -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -28,7 +28,6 @@ $csv = new parseCSV('data.csv'); ?>
 
     <!-- KEYWORD -->
     <meta name="keywords" content="interactive" />
-    <meta name="news_keywords" content="interactive" />
 
     <!-- LINK -->
     <link rel="canonical" href="http://interactive.nydailynews.com/project/">
@@ -176,7 +175,5 @@ endforeach;
     </div>
 </div>
 <footer id="templatefooter"></footer>
-<style type="text/css">
-</style>
 </body>
 </html>

@@ -29,7 +29,7 @@ $csv = new parseCSV('data.csv');
 
     <!-- KEYWORD -->
     <meta name="keywords" content="quiz,quizzes,news quiz,new york city" />
-    <meta name="parsely-tags" content="interactive,interactive quiz,quizzes" />
+    <meta name="parsely-tags" content="interactive,interactive quiz,quizzes,index" />
 
     <!-- LINK -->
     <link rel="canonical" href="http://interactive.nydailynews.com/quiz/">
