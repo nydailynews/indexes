@@ -103,7 +103,7 @@ $csv = new parseCSV('data.csv'); ?>
     </script>
     
     <!-- ADS-START -->
-	<script onload="nydn_ads('project');" src="http://interactive.nydailynews.com/includes/ads/ads.js"></script>
+	<script onload="nydn_ads('project');" src="http://interactive.nydailynews.com/includes/template/template.js"></script>
     <!-- ADS-END -->
 
     <script>var nav_params = {section: 'projects', url: 'http://interactive.nydailynews.com/project'};</script>
